@@ -27,6 +27,11 @@ app.get("/blog", function(req, res){
   res.send("<h1>THIS IS MY BLOG</h1>");
 });
 
+
+app.get("/hobbies", function(req, res){
+  res.send("I love photography");
+});
+
 app.listen(3000, function(){
   console.log("Server started running on port 3000");
 }); // this tells it to listen on a specific port
